@@ -11,10 +11,38 @@
 
 <body>
     <div id="my-app">
-        <top-header company="<%- companyname %>" phone="1-867-45309" logo="https://dc69b531ebf7a086ce97-290115cc0d6de62a29c33db202ae565c.ssl.cf1.rackcdn.com/7/LJ-CBS-Logo_new-Fonts-and-Tagline.png"></top-header>
-        <hero headline="89% off cupcakes" headline2="Crazy Deals" details="Act Now Before October" cta="Deals Today"></hero>
-        <main-content title="50% off cupcakes" main-p="We don't make mistakes, just happy little accidents., Talent is a pursued interest. Anything that you're willing to practice, you can do., I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more fun than most people, wash the brush, just beats the devil out of it., Believe that you can do it cause you can do it., There's nothing in the world that breeds success like success, Lets build a happy little cloud.Lets build some happy little trees, Now then, let's come right down in here and put some nice big strong arms on these trees. Tree needs an arm too. It'll hold up the weight of the forest. Little bird has to have a place to set there. There he goes..., wash the brush, just beats the devil out of it., That's a crooked tree. We'll send him to Washington., In painting you have unlimited power. You have the ability to move mountains. You can bend rivers. But when I get home, the only thing I have power over is the garbage." img1="https://s3.amazonaws.com/treehouse-content/uploads/awards/3995/medium/5894a45455300_gaf-presidents-club.jpg" t-box1="Act Now1" p-box1="Deals Today" img2="https://s3.amazonaws.com/treehouse-content/uploads/awards/3995/medium/5894a45455300_gaf-presidents-club.jpg" t-box2="Act Now 2" p-box2="Deals Today" img3="https://s3.amazonaws.com/treehouse-content/uploads/awards/3995/medium/5894a1ff0267a_angies-list-ss-award-2016.jpg" t-box3="Act Now 3" p-box3="Deals Today"></main-content>
-        <bottom-footer featureshead="About Our Company" feature1="Feature 1" feature2="Feature 2" feature3="Feature 3" feature4="Feature 4" logo="https://dc69b531ebf7a086ce97-290115cc0d6de62a29c33db202ae565c.ssl.cf1.rackcdn.com/7/LJ-CBS-Logo_new-Fonts-and-Tagline.png" address="Connecticut Basement Systems 33 Progress Avenue Seymour, CT 06483" phone="1-867-45309"></bottom-footer>
+        <top-header company="[[company]]" phone="[[phone]]" logo="[[logo]]"></top-header>
+        
+        <hero headline="<%- headline %>" headline2="<%- headline2 %>" details="<%- details %>" cta="<%- cta %>"></hero>
+        
+        <main-content title="<%- contenttitle %>" 
+                      main-p="<%- content %>" 
+                      img1="<%- box1img %>" 
+                      t-box1="<%- box1title %>" 
+                      p-box1="<%- box1details %>"
+                      
+                      img2="<%- box2img %>" 
+                      t-box2="<%- box2title %>" 
+                      p-box2="<%- box2details %>"
+                      
+                       img3="<%- box3img %>" 
+                      t-box3="<%- box3title %>" 
+                      p-box3="<%- box3details %>"
+                      
+                      >
+       </main-content>
+        
+        <bottom-footer featureshead="About Our Company" 
+                       feature1="<%- feature1 %>" 
+                       feature2="<%- feature2 %>" 
+                       feature3="<%- feature3 %>"
+                       feature4="<%- feature4 %>" 
+                       logo="[[logo]]" 
+                       address="[[display_address]]" 
+                       phone="[[phone]]">
+        </bottom-footer>
+        
+        
     </div>
 
     <script type="text/javascript">
